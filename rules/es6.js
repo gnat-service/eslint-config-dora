@@ -33,7 +33,7 @@ module.exports = {
 
         // 'no-this-before-super': 'error', // 禁止 super() 前出现 this
 
-        // 'no-useless-computed-key': 'error', // 禁止不必要的 computed-key，如 {['key']: 1}，会被要求修正为 {key: 1} 或 {key: 1}
+        // 'no-useless-computed-key': 'error', // 禁止不必要的 computed-key，如 {['key']: 1}，会被要求修正为 {key: 1}
 
         'no-var': 'error', // 使用 const 和 let 代替 var
 
