@@ -61,6 +61,7 @@ module.exports = {
                 maxEOF: 1
             }
         ],
+        'no-plusplus': 'off', // 允许自增和自减
         'object-curly-spacing': ['error', 'never', {objectsInObjects: false, arraysInObjects: false}],
         'space-before-function-paren': ['error', {
             anonymous: 'always',

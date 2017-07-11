@@ -38,8 +38,8 @@ module.exports = {
         'no-var': 'error', // 使用 const 和 let 代替 var
 
         'object-shorthand': ['warn', 'always', {
-            'ignoreConstructors': false,
-            'avoidQuotes': true
+            ignoreConstructors: false,
+            avoidQuotes: true
         }],
 
         'prefer-const': ['warn', {
