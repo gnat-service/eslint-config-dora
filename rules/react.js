@@ -16,29 +16,31 @@ module.exports = {
         // http://eslint.org/docs/rules/jsx-quotes
         'jsx-quotes': ['error', 'prefer-double'],
 
-        'class-methods-use-this': ['error', {
-            exceptMethods: [
-                'render',
-                'getInitialState',
-                'getDefaultProps',
-                'getChildContext',
-                'componentWillMount',
-                'componentDidMount',
-                'componentWillReceiveProps',
-                'shouldComponentUpdate',
-                'componentWillUpdate',
-                'componentDidUpdate',
-                'componentWillUnmount',
-            ],
-        }],
+        'class-methods-use-this': [
+            'error', {
+                exceptMethods: [
+                    'render',
+                    'getInitialState',
+                    'getDefaultProps',
+                    'getChildContext',
+                    'componentWillMount',
+                    'componentDidMount',
+                    'componentWillReceiveProps',
+                    'shouldComponentUpdate',
+                    'componentWillUpdate',
+                    'componentDidUpdate',
+                    'componentWillUnmount',
+                ],
+            }
+        ],
 
         // Prevent missing displayName in a React component definition
         // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/display-name.md
-        'react/display-name': ['off', { ignoreTranspilerName: false }],
+        'react/display-name': ['off', {ignoreTranspilerName: false}],
 
         // Forbid certain propTypes (any, array, object)
         // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/forbid-prop-types.md
-        'react/forbid-prop-types': ['error', { forbid: ['any', 'array', 'object'] }],
+        'react/forbid-prop-types': ['error', {forbid: ['any', 'array', 'object']}],
 
         // Enforce boolean attributes notation in JSX
         // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-boolean-value.md
@@ -55,14 +57,16 @@ module.exports = {
 
         // Enforce or disallow spaces inside of curly braces in JSX attributes
         // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-curly-spacing.md
-        'react/jsx-curly-spacing': ['error', 'never', { allowMultiline: true }],
+        'react/jsx-curly-spacing': ['error', 'never', {allowMultiline: true}],
 
         // Enforce event handler naming conventions in JSX
         // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-handler-names.md
-        'react/jsx-handler-names': ['off', {
-            eventHandlerPrefix: 'handle',
-            eventHandlerPropPrefix: 'on',
-        }],
+        'react/jsx-handler-names': [
+            'off', {
+                eventHandlerPrefix: 'handle',
+                eventHandlerPropPrefix: 'on',
+            }
+        ],
 
         // Validate props indentation in JSX
         // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-indent-props.md
@@ -74,19 +78,27 @@ module.exports = {
 
         // Limit maximum of props on a single line in JSX
         // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-max-props-per-line.md
-        'react/jsx-max-props-per-line': ['error', { maximum: 1, when: 'multiline' }],
+        'react/jsx-max-props-per-line': [
+            'error',
+            {
+                maximum: 1,
+                when: 'multiline'
+            }
+        ],
 
         // Prevent usage of .bind() in JSX props
         // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-bind.md
-        'react/jsx-no-bind': ['error', {
-            ignoreRefs: true,
-            allowArrowFunctions: true,
-            allowBind: false,
-        }],
+        'react/jsx-no-bind': [
+            'error', {
+                ignoreRefs: true,
+                allowArrowFunctions: true,
+                allowBind: false,
+            }
+        ],
 
         // Prevent duplicate props in JSX
         // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-duplicate-props.md
-        'react/jsx-no-duplicate-props': ['error', { ignoreCase: true }],
+        'react/jsx-no-duplicate-props': ['error', {ignoreCase: true}],
 
         // Prevent usage of unwrapped JSX strings
         // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-literals.md
@@ -98,32 +110,38 @@ module.exports = {
 
         // Enforce PascalCase for user-defined JSX components
         // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-pascal-case.md
-        'react/jsx-pascal-case': ['error', {
-            allowAllCaps: true,
-            ignore: [],
-        }],
+        'react/jsx-pascal-case': [
+            'error', {
+                allowAllCaps: true,
+                ignore: [],
+            }
+        ],
 
         // Enforce propTypes declarations alphabetical sorting
         // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/sort-prop-types.md
-        'react/sort-prop-types': ['off', {
-            ignoreCase: true,
-            callbacksLast: false,
-            requiredFirst: false,
-        }],
+        'react/sort-prop-types': [
+            'off', {
+                ignoreCase: true,
+                callbacksLast: false,
+                requiredFirst: false,
+            }
+        ],
 
         // Deprecated in favor of react/jsx-sort-props
         'react/jsx-sort-prop-types': 'off',
 
         // Enforce props alphabetical sorting
         // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-sort-props.md
-        'react/jsx-sort-props': ['off', {
-            ignoreCase: true,
-            callbacksLast: false,
-            shorthandFirst: false,
-            shorthandLast: false,
-            noSortAlphabetically: false,
-            reservedFirst: true,
-        }],
+        'react/jsx-sort-props': [
+            'off', {
+                ignoreCase: true,
+                callbacksLast: false,
+                shorthandFirst: false,
+                shorthandLast: false,
+                noSortAlphabetically: false,
+                reservedFirst: true,
+            }
+        ],
 
         // Prevent React to be incorrectly marked as unused
         // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-uses-react.md
@@ -163,7 +181,7 @@ module.exports = {
 
         // Prevent multiple component definition per file
         // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-multi-comp.md
-        'react/no-multi-comp': ['error', { ignoreStateless: true }],
+        'react/no-multi-comp': ['error', {ignoreStateless: true}],
 
         // Prevent usage of setState
         // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-set-state.md
@@ -183,11 +201,18 @@ module.exports = {
 
         // Require stateless functions when not using lifecycle methods, setState or ref
         // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/prefer-stateless-function.md
-        'react/prefer-stateless-function': ['error', { ignorePureComponents: true }],
+        'react/prefer-stateless-function': ['error', {ignorePureComponents: true}],
 
         // Prevent missing props validation in a React component definition
         // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/prop-types.md
-        'react/prop-types': ['error', { ignore: [], customValidators: [], skipUndeclared: false }],
+        'react/prop-types': [
+            'error',
+            {
+                ignore: [],
+                customValidators: [],
+                skipUndeclared: false
+            }
+        ],
 
         // Prevent missing React when using JSX
         // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/react-in-jsx-scope.md
@@ -203,26 +228,30 @@ module.exports = {
 
         // Enforce component methods order
         // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/sort-comp.md
-        'react/sort-comp': ['error', {
-            order: [
-                'static-methods',
-                'lifecycle',
-                '/^on.+$/',
-                '/^(get|set)(?!(InitialState$|DefaultProps$|ChildContext$)).+$/',
-                'everything-else',
-                '/^render.+$/',
-                'render'
-            ],
-        }],
+        'react/sort-comp': [
+            'error', {
+                order: [
+                    'static-methods',
+                    'lifecycle',
+                    '/^on.+$/',
+                    '/^(get|set)(?!(InitialState$|DefaultProps$|ChildContext$)).+$/',
+                    'everything-else',
+                    '/^render.+$/',
+                    'render'
+                ],
+            }
+        ],
 
         // Prevent missing parentheses around multilines JSX
         // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-wrap-multilines.md
-        'react/jsx-wrap-multilines': ['error', {
-            declaration: true,
-            assignment: true,
-            return: true,
-            arrow: true,
-        }],
+        'react/jsx-wrap-multilines': [
+            'error', {
+                declaration: true,
+                assignment: true,
+                return: true,
+                arrow: true,
+            }
+        ],
 
         // Require that the first prop in a JSX element be on a new line when the element is multiline
         // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-first-prop-new-line.md
@@ -242,7 +271,7 @@ module.exports = {
 
         // only .jsx files may have JSX
         // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-filename-extension.md
-        'react/jsx-filename-extension': ['error', { extensions: ['.jsx'] }],
+        'react/jsx-filename-extension': ['error', {extensions: ['.jsx']}],
 
         // prevent accidental JS comments from being injected into JSX as text
         // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-comment-textnodes.md
@@ -254,7 +283,7 @@ module.exports = {
 
         // require a shouldComponentUpdate method, or PureRenderMixin
         // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/require-optimization.md
-        'react/require-optimization': ['off', { allowDecorators: [] }],
+        'react/require-optimization': ['off', {allowDecorators: []}],
 
         // warn against using findDOMNode()
         // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-find-dom-node.md
@@ -262,11 +291,11 @@ module.exports = {
 
         // Forbid certain props on Components
         // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/forbid-component-props.md
-        'react/forbid-component-props': ['off', { forbid: [] }],
+        'react/forbid-component-props': ['off', {forbid: []}],
 
         // Forbid certain elements
         // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/forbid-elements.md
-        'react/forbid-elements': ['off', { forbid: [], }],
+        'react/forbid-elements': ['off', {forbid: []}],
 
         // Prevent problem with children and props.dangerouslySetInnerHTML
         // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-danger-with-children.md
@@ -274,11 +303,12 @@ module.exports = {
 
         // Prevent unused propType definitions
         // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-unused-prop-types.md
-        'react/no-unused-prop-types': ['error', {
-            customValidators: [
-            ],
-            skipShapeProps: true,
-        }],
+        'react/no-unused-prop-types': [
+            'error', {
+                customValidators: [],
+                skipShapeProps: true,
+            }
+        ],
 
         // Require style prop value be an object or var
         // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/style-prop-object.md
@@ -294,11 +324,13 @@ module.exports = {
 
         // Validate whitespace in and around the JSX opening and closing brackets
         // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-tag-spacing.md
-        'react/jsx-tag-spacing': ['error', {
-            closingSlash: 'never',
-            beforeSelfClosing: 'always',
-            afterOpening: 'never'
-        }],
+        'react/jsx-tag-spacing': [
+            'error', {
+                closingSlash: 'never',
+                beforeSelfClosing: 'always',
+                afterOpening: 'never'
+            }
+        ],
 
         // Enforce spaces before the closing bracket of self-closing JSX elements
         // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-space-before-closing.md
@@ -324,7 +356,7 @@ module.exports = {
         // Enforce all defaultProps have a corresponding non-required PropType
         // https://github.com/yannickcr/eslint-plugin-react/blob/9e13ae2c51e44872b45cc15bf1ac3a72105bdd0e/docs/rules/default-props-match-prop-types.md
         // TODO: enable, semver-minor
-        'react/default-props-match-prop-types': ['off', { allowRequiredDefaults: false }],
+        'react/default-props-match-prop-types': ['off', {allowRequiredDefaults: false}],
 
         // Prevent usage of shouldComponentUpdate when extending React.PureComponent
         // https://github.com/yannickcr/eslint-plugin-react/blob/9e13ae2c51e44872b45cc15bf1ac3a72105bdd0e/docs/rules/no-redundant-should-component-update.md

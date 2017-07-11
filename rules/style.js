@@ -1,6 +1,6 @@
 module.exports = {
-    'rules': {
-        'indent': [
+    rules: {
+        indent: [
             'error',
             4,
             {
@@ -21,27 +21,27 @@ module.exports = {
                 }
             }
         ],
-        'quotes': [
+        quotes: [
             'error',
             'single',
             {
-                'allowTemplateLiterals': true,
+                allowTemplateLiterals: true,
                 avoidEscape: true
             }
         ],
         'key-spacing': [
             'error',
             {
-                'beforeColon': false,
-                'mode': 'strict'
+                beforeColon: false,
+                mode: 'strict'
             }
         ],
         'lines-around-comment': [
             'error',
             {
-                'allowBlockStart': true,
-                'allowObjectStart': true,
-                'allowArrayStart': true
+                allowBlockStart: true,
+                allowObjectStart: true,
+                allowArrayStart: true
             }
         ],
         'max-len': ['error', 120, 2, {
@@ -55,7 +55,17 @@ module.exports = {
             'warn',
             7
         ],
-        'no-multiple-empty-lines': ['warn', { max: 2, maxEOF: 1 }],
-        'space-before-function-paren': 'error',
+        'no-multiple-empty-lines': ['warn',
+            {
+                max: 2,
+                maxEOF: 1
+            }
+        ],
+        'object-curly-spacing': ['error', 'never', {objectsInObjects: false, arraysInObjects: false}],
+        'space-before-function-paren': ['error', {
+            anonymous: 'always',
+            named: 'always',
+            asyncArrow: 'always'
+        }],
     }
 };
