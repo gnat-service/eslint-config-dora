@@ -37,13 +37,23 @@ module.exports = {
 
         'no-var': 'error', // 使用 const 和 let 代替 var
 
+        'object-shorthand': ['warn', 'always', {
+            'ignoreConstructors': false,
+            'avoidQuotes': true
+        }],
+
+        'prefer-const': ['warn', {
+            destructuring: 'any',
+            ignoreReadBeforeAssign: true,
+        }],
+
+        'prefer-rest-params': 'warn', // 使用 rest 参数替代 arguments
+
         'prefer-spread': [ // 使用扩展运算符替代 .apply()
             'error'
         ],
 
 
         'prefer-template': 'warn', // 使用模板字符串替代字符串拼接
-
-        'prefer-rest-params': 'warn' // 使用 rest 参数替代 arguments
     }
 };
