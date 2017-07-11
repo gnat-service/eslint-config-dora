@@ -2,7 +2,7 @@
 
 [![npm version](https://badge.fury.io/js/eslint-config-dora.svg)](http://badge.fury.io/js/eslint-config-dora)
 
-This package provides .eslintrc of Dora's Dream as an extensible shared config. It base on Airbnb's .eslintrc.
+This package provides .eslintrc of Dora's Dream as an extensible shared config. It bases on Airbnb's .eslintrc.
 
 ## Usage
 
