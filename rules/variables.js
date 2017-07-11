@@ -1,8 +1,3 @@
-/**
- * Created on 2017/7/10.
- * @fileoverview 请填写简要的文件说明.
- * @author joc (Chen Wen)
- */
 module.exports = {
     rules: {
         'no-use-before-define': ['error',
