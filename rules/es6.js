@@ -42,6 +42,12 @@ module.exports = {
             avoidQuotes: true
         }],
 
+        // 使用箭头函数替代普通函数来作为回调
+        'prefer-arrow-callback': ['warn', {
+            allowNamedFunctions: false,
+            allowUnboundThis: true
+        }],
+
         'prefer-const': ['warn', {
             destructuring: 'any',
             ignoreReadBeforeAssign: true,
