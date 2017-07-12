@@ -29,5 +29,13 @@ module.exports = {
     },
     rules: {
         'import/no-extraneous-dependencies': 'off',
+        'import/no-anonymous-default-export': ['off', {
+            allowArray: false,
+            allowArrowFunction: false,
+            allowAnonymousClass: false,
+            allowAnonymousFunction: false,
+            allowLiteral: false,
+            allowObject: false,
+        }],
     },
 };
