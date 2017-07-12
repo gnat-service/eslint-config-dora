@@ -1,6 +1,6 @@
 {
     "name": "eslint-config-dora",
-    "version": "0.2.1",
+    "version": "0.2.2",
     "description": "Eslint config of Dora's Dream, base on eslint-config-airbnb.",
     "main": "index.js",
     "scripts": {
