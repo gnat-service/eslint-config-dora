@@ -1,7 +1,7 @@
 {
-    "name": "eslint-config-dora",
-    "version": "0.2.2",
-    "description": "Eslint config of Dora's Dream, base on eslint-config-airbnb.",
+    "name": "eslint-config-gnat",
+    "version": "0.0.1",
+    "description": "Eslint config of Gnat-service, base on eslint-config-airbnb.",
     "main": "index.js",
     "scripts": {
         "prelint": "editorconfig-tools check * rules/* test/*",
@@ -16,21 +16,21 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+ssh://git@github.com/becooltech/eslint-config-dora.git"
+        "url": "git+ssh://git@github.com/gnat-service/eslint-config-gnat.git"
     },
     "keywords": [
         "eslint",
         "eslintconfig",
         "config",
-        "dora",
+        "gnat",
         "javascript"
     ],
     "author": "leaf4monkey <joc@98@163.com>",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/becooltech/eslint-config-dora/issues"
+        "url": "https://github.com/gnat-service/eslint-config-gnat/issues"
     },
-    "homepage": "https://github.com/becooltech/eslint-config-dora#readme",
+    "homepage": "https://github.com/gnat-service/eslint-config-gnat#readme",
     "dependencies": {
         "eslint-config-airbnb": "^15.0.2"
     },
