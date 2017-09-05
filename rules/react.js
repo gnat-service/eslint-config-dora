@@ -26,6 +26,9 @@ module.exports = {
         // https://github.com/yannickcr/eslint-plugin-react/blob/9e13ae2c51e44872b45cc15bf1ac3a72105bdd0e/docs/rules/no-redundant-should-component-update.md
         // TODO: enable, semver-major
         'react/no-redundant-should-component-update': 'off',
+        'react/boolean-prop-naming': 'off',
+        'react/no-typos': 'off',
+        'react/no-unused-state': 'off',
     },
 
     settings: {

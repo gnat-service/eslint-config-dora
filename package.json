@@ -6,8 +6,9 @@
     "scripts": {
         "prelint": "editorconfig-tools check * rules/* test/*",
         "lint": "eslint .",
+        "prepare": "eslint-find-rules --unused",
         "tests-only": "babel-tape-runner ./test/test-*.js",
-        "prepublish": "(in-install || eslint-find-rules --unused) && (not-in-publish || npm test) && safe-publish-latest",
+        "prepublishOnly": "npm test && safe-publish-latest",
         "pretest": "npm run --silent lint",
         "test": "npm run --silent tests-only",
         "pretravis": "cd ../eslint-config-airbnb-base && npm install && npm link && cd - && npm link --no-save eslint-config-airbnb-base",
