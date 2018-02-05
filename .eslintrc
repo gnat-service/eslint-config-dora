@@ -3,6 +3,27 @@
   "rules": {
     // disable requiring trailing commas because it might be nice to revert to
     // being JSON at some point, and I don't want to make big changes now.
-    "comma-dangle": 0
+    "comma-dangle": 0,
+    "indent": [
+      "error",
+      2,
+      {
+        "SwitchCase": 1,
+        "VariableDeclarator": 1,
+        "outerIIFEBody": 1,
+        // "MemberExpression": null,
+        // "CallExpression": {
+        // "parameters": null,
+        // },
+        "FunctionDeclaration": {
+          "parameters": 1,
+          "body": 1
+        },
+        "FunctionExpression": {
+          "parameters": 1,
+          "body": 1
+        }
+      }
+    ]
   }
 }
