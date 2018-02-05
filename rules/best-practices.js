@@ -8,7 +8,6 @@ module.exports = {
     'no-param-reassign': 'off',
     'no-unmodified-loop-condition': 'error',
     'no-unused-expressions': 'off',
-    'no-useless-call': 'error',
-    'implicit-arrow-linebreak': ['error', 'beside']
+    'no-useless-call': 'error'
   }
 };
